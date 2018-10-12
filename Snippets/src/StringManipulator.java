@@ -26,6 +26,7 @@ public class StringManipulator {
 	 * @param n number of repeats
 	 * @param c the char to repeat
 	 * @return String of chars
+	 * 
 	 */
 	public String charPadding(int n, char c) {
 		return (n == 0 ? "" : String.format("%" + n + "s", c));
