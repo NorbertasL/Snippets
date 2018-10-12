@@ -13,6 +13,23 @@ public class StringManipulator {
 		return acronym.toUpperCase();
 	}
 	
+	/**Method that can generate multiple spaces
+	 * 
+	 * @param n number of repeats
+	 * @return String of spaces " "
+	 */
+	public String spacePadding(int n) {
+		return (n == 0 ? "" : String.format("%" + n + "s", " "));
+	}
+	/**Method that can generate multiple chars
+	 * 
+	 * @param n number of repeats
+	 * @param c the char to repeat
+	 * @return String of chars
+	 */
+	public String charPadding(int n, char c) {
+		return (n == 0 ? "" : String.format("%" + n + "s", c));
+	}
 	
 	
 	
